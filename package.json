@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/dtpowers/GatsbyEffect.git"
   },
+  "scripts": {
+    "start": "node gatsby.js"
+  },
   "author": "Donovan Powers",
   "license": "MIT",
   "bugs": {
