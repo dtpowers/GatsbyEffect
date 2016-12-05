@@ -125,7 +125,7 @@ DEALINGS IN THE SOFTWARE.
       contentType: false,
       processData: false,
       success: function(data) {
-        alert("Secret Saved!");
+        window.location = "/1";
       },
       error: function() {
         alert("Problem saving sercret :(");

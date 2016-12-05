@@ -16,6 +16,7 @@ var upload = multer({
 exports.init = function(app) {
 
   app.get('/', home);
+  app.get('/1', home1);
 
   app.post('/saveBlob', upload.single('file'), saveBlob);
 
@@ -25,6 +26,9 @@ home = function(req, res) {
   res.render('index');
 }
 
+home1 = function(req, res) {
+  res.render('index2');
+}
 saveBlob = function(req, res) {
   console.log(req.file);
   res.status(200);
