@@ -10,9 +10,21 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <!--Thanks to https://codepen.io/saransh/pen/BKJun?editors=1111 for the Aesthetics -->
+
+<body onload="playSound();">
 <div class="stars"></div>
 <div class="twinkling"></div>
 <div class="clouds"></div>
+<audio id="noise"></audio>
+</body>
+<script>
+function playSound(){
+    var snd=document.getElementById('noise'); 
+    snd.src = 'secrets.mp3';
+    snd.load();
+    snd.play();
+}
+</script>
 
 <script >alert("submitted!");</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
