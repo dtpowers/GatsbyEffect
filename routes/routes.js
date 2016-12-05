@@ -7,5 +7,4 @@ exports.init = function(app) {
 
 home = function(req, res) {
   res.render('index');
-
 }
