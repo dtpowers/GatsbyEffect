@@ -1,0 +1,19 @@
+{
+  "name": "gatsby",
+  "version": "1.0.0",
+  "description": "A data collection mechanism for my Max for live Performance \"Secrets\", this web app collects mp3's of people all over telling secrets",
+  "main": "gatsby.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtpowers/GatsbyEffect.git"
+  },
+  "author": "Donovan Powers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dtpowers/GatsbyEffect/issues"
+  },
+  "homepage": "https://github.com/dtpowers/GatsbyEffect#readme"
+}
