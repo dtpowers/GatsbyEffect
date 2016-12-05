@@ -114,7 +114,25 @@ DEALINGS IN THE SOFTWARE.
 
   Recorder.setupDownload = function(blob, filename) {
     console.log("Blob ready for send off!");
-    //console.log(blob);
+    console.log(blob);
+    var data = new FormData();
+    data.append('file', blob);
+
+    $.ajax({
+      url: "/saveBlob",
+      type: 'POST',
+      data: data,
+      contentType: false,
+      processData: false,
+      success: function(data) {
+        alert("Secret Saved!");
+      },
+      error: function() {
+        alert("Problem saving sercret :(");
+      }
+    });
+
+
   }
 
   window.Recorder = Recorder;
